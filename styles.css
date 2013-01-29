@@ -1,3 +1,5 @@
+/* */
+
 body {
 	font-family:arial;
 }
@@ -25,7 +27,7 @@ body {
 	width:100%;
 	height:100%;
 	overflow: inherit;
-	visibility:visible;
+	visibility:visible;/* set to hiddle or visible for your reflow needs */
 	-webkit-transform: translate3d(0,0,0);
 	-webkit-transition:-webkit-transform 0.2s linear;
 	transition-delay:0s;

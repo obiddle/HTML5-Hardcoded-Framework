@@ -11,16 +11,14 @@
  <div class="toolbar">The ToolBar</div><!-- Not fix on pull down or pull up yet -->
  <div class="pageOne"><!-- HTML content page one-->
  	<div class="buttonOne">PRESS ME
- 		<div id="buttonCover" onClick='setTimeout(function() { nav.turnPage(this);}, 300)'></div>
- 	</div><!-- uses tappables for Native feel-->
+ 		<div id="buttonCover" onClick='setTimeout(function() { nav.turnPage(this);}, 300)'></div><!-- uses tappable.js for Native feel-->
+ 	</div>
  </div>
  <div class="pageTwo">
  	<div class="buttonOne">GO BACK
  		<div id="buttonCover" onClick='setTimeout(function() { nav.goBack(this);}, 300)'></div>
  	</div>
  </div><!-- HTML content page Two-->
-
-
 
 <script>
 tappable("#buttonCover",{activeClassDelay:50,inactiveClassDelay:500});

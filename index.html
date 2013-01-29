@@ -4,14 +4,26 @@
 <link rel="stylesheet" type="text/css" href="styles.css" />
 <script type="text/javascript" src="jquery-1.7.1.min.js"></script>
  <script type="text/javascript" src="tappable.js"></script>
+  <script type="text/javascript" src="click.js"></script>
 </head>
 
-<script>
-tappable("#dealcover",{activeClassDelay:50,inactiveClassDelay:500});
-
-</script>
 <body>
  <div class="toolbar">The ToolBar</div><!-- Not fix on pull down or pull up yet -->
- <div class="pageOne">Page one</div><!-- HTML content page one-->
- <div class="pageTwo">Page Two</div><!-- HTML content page Two-->
+ <div class="pageOne"><!-- HTML content page one-->
+ 	<div class="buttonOne">PRESS ME
+ 		<div id="buttonCover" onClick='setTimeout(function() { nav.turnPage(this);}, 300)'></div>
+ 	</div><!-- uses tappables for Native feel-->
+ </div>
+ <div class="pageTwo">
+ 	<div class="buttonOne">GO BACK
+ 		<div id="buttonCover" onClick='setTimeout(function() { nav.goBack(this);}, 300)'></div>
+ 	</div>
+ </div><!-- HTML content page Two-->
+
+
+
+<script>
+tappable("#buttonCover",{activeClassDelay:50,inactiveClassDelay:500});
+
+</script>
 </body>

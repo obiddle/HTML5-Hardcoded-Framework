@@ -1,4 +1,4 @@
-/* */
+/* This is my comment here */
 
 var nav = {
 
